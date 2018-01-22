@@ -29,6 +29,16 @@ namespace Hangman
 
 
 
+        /// <summary>
+        /// Calculates number of words in the list of words
+        /// </summary>
+        private int NumberOfWords()
+        {
+            int numberOfWords = 1;
+            return numberOfWords;
+
+        }
+
 
 
         /// <summary>
