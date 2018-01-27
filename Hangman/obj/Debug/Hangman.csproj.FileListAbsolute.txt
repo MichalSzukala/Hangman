@@ -8,3 +8,4 @@ C:\Users\Z\Desktop\Przedmioty\Projekty\Hangman\Hangman\obj\Debug\Hangman.csproj.
 C:\Users\Z\Desktop\Przedmioty\Projekty\Hangman\Hangman\obj\Debug\Hangman.exe
 C:\Users\Z\Desktop\Przedmioty\Projekty\Hangman\Hangman\obj\Debug\Hangman.pdb
 C:\Users\Z\Desktop\Przedmioty\Projekty\Hangman\Hangman\obj\Debug\Hangman.GUI.resources
+C:\Users\Z\Desktop\Przedmioty\Projekty\Hangman\Hangman\obj\Debug\Hangman.AboutBoxInfo.resources
