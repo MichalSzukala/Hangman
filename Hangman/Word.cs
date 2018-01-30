@@ -22,6 +22,10 @@ namespace Hangman
         }
 
 
+        public int WordLength()
+        {
+            return wordCharArray.Length;
+        }
 
 
     }

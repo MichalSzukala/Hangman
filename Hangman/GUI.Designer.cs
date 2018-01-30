@@ -40,14 +40,17 @@
             this.textBoxLetter = new System.Windows.Forms.TextBox();
             this.buttonOK = new System.Windows.Forms.Button();
             this.buttonNewGame = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labelLetter0 = new System.Windows.Forms.Label();
+            this.labelLetter1 = new System.Windows.Forms.Label();
+            this.labelLetter2 = new System.Windows.Forms.Label();
+            this.labelLetter3 = new System.Windows.Forms.Label();
+            this.labelLetter4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelHangman = new System.Windows.Forms.Panel();
             this.labelMessage = new System.Windows.Forms.Label();
+            this.labelLetter5 = new System.Windows.Forms.Label();
+            this.labelLetter6 = new System.Windows.Forms.Label();
+            this.labelLetter7 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -83,7 +86,7 @@
             // 
             this.newMenu.Name = "newMenu";
             this.newMenu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newMenu.Size = new System.Drawing.Size(152, 22);
+            this.newMenu.Size = new System.Drawing.Size(149, 22);
             this.newMenu.Text = "New";
             this.newMenu.Click += new System.EventHandler(this.newMenu_Click);
             // 
@@ -91,7 +94,7 @@
             // 
             this.aboutMenu.Name = "aboutMenu";
             this.aboutMenu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.aboutMenu.Size = new System.Drawing.Size(152, 22);
+            this.aboutMenu.Size = new System.Drawing.Size(149, 22);
             this.aboutMenu.Text = "About";
             this.aboutMenu.Click += new System.EventHandler(this.aboutMenu_Click);
             // 
@@ -99,7 +102,7 @@
             // 
             this.exitMenu.Name = "exitMenu";
             this.exitMenu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.exitMenu.Size = new System.Drawing.Size(152, 22);
+            this.exitMenu.Size = new System.Drawing.Size(149, 22);
             this.exitMenu.Text = "Exit";
             this.exitMenu.Click += new System.EventHandler(this.exitMenu_Click);
             // 
@@ -141,51 +144,52 @@
             this.buttonNewGame.TabIndex = 5;
             this.buttonNewGame.Text = "New Game";
             this.buttonNewGame.UseVisualStyleBackColor = true;
+            this.buttonNewGame.Click += new System.EventHandler(this.buttonNewGame_Click);
             // 
-            // label1
+            // labelLetter0
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(37, 197);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 25);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "label1";
+            this.labelLetter0.AutoSize = true;
+            this.labelLetter0.Location = new System.Drawing.Point(40, 261);
+            this.labelLetter0.Name = "labelLetter0";
+            this.labelLetter0.Size = new System.Drawing.Size(64, 25);
+            this.labelLetter0.TabIndex = 6;
+            this.labelLetter0.Text = "label0";
             // 
-            // label2
+            // labelLetter1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(107, 197);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 25);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "label2";
+            this.labelLetter1.AutoSize = true;
+            this.labelLetter1.Location = new System.Drawing.Point(110, 261);
+            this.labelLetter1.Name = "labelLetter1";
+            this.labelLetter1.Size = new System.Drawing.Size(64, 25);
+            this.labelLetter1.TabIndex = 7;
+            this.labelLetter1.Text = "label1";
             // 
-            // label3
+            // labelLetter2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(177, 197);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 25);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "label3";
+            this.labelLetter2.AutoSize = true;
+            this.labelLetter2.Location = new System.Drawing.Point(180, 261);
+            this.labelLetter2.Name = "labelLetter2";
+            this.labelLetter2.Size = new System.Drawing.Size(64, 25);
+            this.labelLetter2.TabIndex = 8;
+            this.labelLetter2.Text = "label2";
             // 
-            // label4
+            // labelLetter3
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(247, 197);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 25);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "label4";
+            this.labelLetter3.AutoSize = true;
+            this.labelLetter3.Location = new System.Drawing.Point(250, 261);
+            this.labelLetter3.Name = "labelLetter3";
+            this.labelLetter3.Size = new System.Drawing.Size(64, 25);
+            this.labelLetter3.TabIndex = 9;
+            this.labelLetter3.Text = "label3";
             // 
-            // label5
+            // labelLetter4
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(327, 197);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 25);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "label5";
+            this.labelLetter4.AutoSize = true;
+            this.labelLetter4.Location = new System.Drawing.Point(320, 261);
+            this.labelLetter4.Name = "labelLetter4";
+            this.labelLetter4.Size = new System.Drawing.Size(64, 25);
+            this.labelLetter4.TabIndex = 10;
+            this.labelLetter4.Text = "label4";
             // 
             // pictureBox1
             // 
@@ -213,20 +217,50 @@
             this.labelMessage.TabIndex = 13;
             this.labelMessage.Text = "Message";
             // 
+            // labelLetter5
+            // 
+            this.labelLetter5.AutoSize = true;
+            this.labelLetter5.Location = new System.Drawing.Point(390, 261);
+            this.labelLetter5.Name = "labelLetter5";
+            this.labelLetter5.Size = new System.Drawing.Size(64, 25);
+            this.labelLetter5.TabIndex = 14;
+            this.labelLetter5.Text = "label5";
+            // 
+            // labelLetter6
+            // 
+            this.labelLetter6.AutoSize = true;
+            this.labelLetter6.Location = new System.Drawing.Point(460, 261);
+            this.labelLetter6.Name = "labelLetter6";
+            this.labelLetter6.Size = new System.Drawing.Size(64, 25);
+            this.labelLetter6.TabIndex = 15;
+            this.labelLetter6.Text = "label6";
+            // 
+            // labelLetter7
+            // 
+            this.labelLetter7.AutoSize = true;
+            this.labelLetter7.Location = new System.Drawing.Point(530, 261);
+            this.labelLetter7.Name = "labelLetter7";
+            this.labelLetter7.Size = new System.Drawing.Size(64, 25);
+            this.labelLetter7.TabIndex = 16;
+            this.labelLetter7.Text = "label7";
+            // 
             // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1175, 676);
+            this.Controls.Add(this.labelLetter7);
+            this.Controls.Add(this.labelLetter6);
+            this.Controls.Add(this.labelLetter5);
             this.Controls.Add(this.labelMessage);
             this.Controls.Add(this.panelHangman);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelLetter4);
+            this.Controls.Add(this.labelLetter3);
+            this.Controls.Add(this.labelLetter2);
+            this.Controls.Add(this.labelLetter1);
+            this.Controls.Add(this.labelLetter0);
             this.Controls.Add(this.buttonNewGame);
             this.Controls.Add(this.buttonOK);
             this.Controls.Add(this.textBoxLetter);
@@ -258,14 +292,17 @@
         private System.Windows.Forms.TextBox textBoxLetter;
         private System.Windows.Forms.Button buttonOK;
         private System.Windows.Forms.Button buttonNewGame;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelLetter0;
+        private System.Windows.Forms.Label labelLetter1;
+        private System.Windows.Forms.Label labelLetter2;
+        private System.Windows.Forms.Label labelLetter3;
+        private System.Windows.Forms.Label labelLetter4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panelHangman;
         private System.Windows.Forms.Label labelMessage;
+        private System.Windows.Forms.Label labelLetter5;
+        private System.Windows.Forms.Label labelLetter6;
+        private System.Windows.Forms.Label labelLetter7;
     }
 }
 
