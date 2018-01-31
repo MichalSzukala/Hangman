@@ -14,7 +14,6 @@ namespace Hangman
     class SelectingWord
     {
 
-
         /// <summary>
         /// Provides random number
         /// </summary>
@@ -26,19 +25,6 @@ namespace Hangman
 
             return randomNumber; 
         }
-
-
-
-        /// <summary>
-        /// Calculates number of words in the list of words
-        /// </summary>
-        private int NumberOfWords()
-        {
-            int numberOfWords = 1;
-            return numberOfWords;
-
-        }
-
 
 
         /// <summary>
@@ -53,7 +39,7 @@ namespace Hangman
             string[] arrayOfWords = wordListString.Split(new[] { Environment.NewLine },StringSplitOptions.None);
 
             int randomNumber = RandomNumber(arrayOfWords.Length);
-            //System.Diagnostics.Debug.WriteLine(arrayOfWords[randomNumber]);
+            //System.Diagnostics.Debug.WriteLine(arrayOfWords[randomNumber]);---------------------------------
 
             return arrayOfWords[randomNumber];
         }

@@ -33,6 +33,8 @@ namespace Hangman
             textBoxLetter.Clear();
             labelMessage.Text = String.Empty;
             arrayOfLabels = startArrayOfLabels();
+            buttonOK.Enabled = false;
+            textBoxLetter.Enabled = false;
 
         }
 
@@ -73,7 +75,49 @@ namespace Hangman
         /// </summary>
         private void buttonOK_Click(object sender, EventArgs e)
         {
-            ReadInput();
+            if(ReadInput())
+            {
+                labelMessage.Text = String.Empty;
+                string userInput = textBoxLetter.Text;
+                userInput = userInput.ToUpper();
+                char userInputChar = userInput[0];
+                int index = 1;
+                bool guessTest = false; 
+                
+                while (index != -1)
+                {
+                    index = word.positionOfLetter(userInputChar);
+                    
+                    if (index != -1)
+                    {
+                        arrayOfLabels[index].Text = userInput;
+                        guessTest = true;
+                    }
+                }
+                if(guessTest)
+                {
+                    labelMessage.Text = "BRAVO!!!";
+                    Winning();
+                }
+                else
+                {
+                    labelMessage.Text = "Haha... You will hang soon!!";
+                }
+                textBoxLetter.Clear();
+            }
+        }
+
+        /// <summary>
+        /// showing winning message when user won the game
+        /// </summary>
+        private void Winning()
+        {
+            if (word.WiningTest())
+            {
+                labelMessage.Text = "Pretty good, You won the game!!";
+                buttonOK.Enabled = false;
+                textBoxLetter.Enabled = false;
+            }
         }
 
         /// <summary>
@@ -132,7 +176,8 @@ namespace Hangman
         }
 
         /// <summary>
-        /// creates array which contains all the labels covering the word user is guessing.  All the labels are geting empty string as a value
+        /// creates array which contains all the labels covering the word that user is guessing.  All the labels are geting empty string
+        /// as a beginning value
         /// </summary>
         private Label[] startArrayOfLabels()
         {
@@ -144,32 +189,24 @@ namespace Hangman
         }
 
 
-        private void showRightNumberOfLabels()
-        {
-
-        }
-        
-        
         /// <summary>
         /// displays right number of letters to guess and starts the new game
         /// </summary>
         private void startNewGame()
         {
-            word = new Word();
-            int lengthOfWord = word.WordLength();
+            buttonOK.Enabled = true;
+            textBoxLetter.Enabled = true;
+            int lengthOfWord;
+
+            do
+            {
+                word = new Word();
+                lengthOfWord = word.WordLength();
+
+            } while (lengthOfWord >= 9);
 
             for (int i = 0; i < lengthOfWord; i++)
                 arrayOfLabels[i].Text = "__";
-
         }
-        
-
-
-       
-       
-
-    
-
-       
     }
 }
