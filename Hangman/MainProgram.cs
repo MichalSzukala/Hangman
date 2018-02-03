@@ -17,8 +17,6 @@ namespace Hangman
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new GUI());
-            SelectingWord word = new SelectingWord();
-            word.TheWord();
         }
     }
 }

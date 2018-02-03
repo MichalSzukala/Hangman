@@ -9,3 +9,25 @@ C:\Users\Z\Desktop\Przedmioty\Projekty\Hangman\Hangman\obj\Debug\Hangman.exe
 C:\Users\Z\Desktop\Przedmioty\Projekty\Hangman\Hangman\obj\Debug\Hangman.pdb
 C:\Users\Z\Desktop\Przedmioty\Projekty\Hangman\Hangman\obj\Debug\Hangman.GUI.resources
 C:\Users\Z\Desktop\Przedmioty\Projekty\Hangman\Hangman\obj\Debug\Hangman.AboutBoxInfo.resources
+C:\Users\Z\Desktop\To GitHub\7 Drawing\Hangman\bin\Debug\Hangman.exe.config
+C:\Users\Z\Desktop\To GitHub\7 Drawing\Hangman\bin\Debug\Hangman.exe
+C:\Users\Z\Desktop\To GitHub\7 Drawing\Hangman\bin\Debug\Hangman.pdb
+C:\Users\Z\Desktop\To GitHub\7 Drawing\Hangman\obj\Debug\Hangman.csprojResolveAssemblyReference.cache
+C:\Users\Z\Desktop\To GitHub\7 Drawing\Hangman\obj\Debug\Hangman.AboutBoxInfo.resources
+C:\Users\Z\Desktop\To GitHub\7 Drawing\Hangman\obj\Debug\Hangman.GUI.resources
+C:\Users\Z\Desktop\To GitHub\7 Drawing\Hangman\obj\Debug\Hangman.Properties.Resources.resources
+C:\Users\Z\Desktop\To GitHub\7 Drawing\Hangman\obj\Debug\Hangman.csproj.GenerateResource.Cache
+C:\Users\Z\Desktop\To GitHub\7 Drawing\Hangman\obj\Debug\Hangman.csproj.CoreCompileInputs.cache
+C:\Users\Z\Desktop\To GitHub\7 Drawing\Hangman\obj\Debug\Hangman.exe
+C:\Users\Z\Desktop\To GitHub\7 Drawing\Hangman\obj\Debug\Hangman.pdb
+C:\Users\Z\Desktop\To GitHub\7 Drawing hangman\Hangman\bin\Debug\Hangman.exe.config
+C:\Users\Z\Desktop\To GitHub\7 Drawing hangman\Hangman\bin\Debug\Hangman.exe
+C:\Users\Z\Desktop\To GitHub\7 Drawing hangman\Hangman\bin\Debug\Hangman.pdb
+C:\Users\Z\Desktop\To GitHub\7 Drawing hangman\Hangman\obj\Debug\Hangman.csprojResolveAssemblyReference.cache
+C:\Users\Z\Desktop\To GitHub\7 Drawing hangman\Hangman\obj\Debug\Hangman.AboutBoxInfo.resources
+C:\Users\Z\Desktop\To GitHub\7 Drawing hangman\Hangman\obj\Debug\Hangman.GUI.resources
+C:\Users\Z\Desktop\To GitHub\7 Drawing hangman\Hangman\obj\Debug\Hangman.Properties.Resources.resources
+C:\Users\Z\Desktop\To GitHub\7 Drawing hangman\Hangman\obj\Debug\Hangman.csproj.GenerateResource.Cache
+C:\Users\Z\Desktop\To GitHub\7 Drawing hangman\Hangman\obj\Debug\Hangman.csproj.CoreCompileInputs.cache
+C:\Users\Z\Desktop\To GitHub\7 Drawing hangman\Hangman\obj\Debug\Hangman.exe
+C:\Users\Z\Desktop\To GitHub\7 Drawing hangman\Hangman\obj\Debug\Hangman.pdb

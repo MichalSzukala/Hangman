@@ -17,6 +17,7 @@ namespace Hangman
     {
         private Word word;
         private Label[] arrayOfLabels;
+        private int numberOfTries;
 
         public GUI()
         {
@@ -35,6 +36,8 @@ namespace Hangman
             arrayOfLabels = startArrayOfLabels();
             buttonOK.Enabled = false;
             textBoxLetter.Enabled = false;
+            numberOfTries = 0;
+            panelHangman.Refresh();
 
         }
 
@@ -98,10 +101,18 @@ namespace Hangman
                 {
                     labelMessage.Text = "BRAVO!!!";
                     Winning();
+                    
+                   
                 }
                 else
                 {
                     labelMessage.Text = "Haha... You will hang soon!!";
+                    numberOfTries++;
+                    DrawingHangman((PictureParts)numberOfTries);
+
+                    if (numberOfTries == 9)
+                        Loosing();
+                    
                 }
                 textBoxLetter.Clear();
             }
@@ -117,6 +128,25 @@ namespace Hangman
                 labelMessage.Text = "Pretty good, You won the game!!";
                 buttonOK.Enabled = false;
                 textBoxLetter.Enabled = false;
+            }
+        }
+
+        /// <summary>
+        /// showing loosing message when user lost the game, and filling missing letters
+        /// </summary>
+        private void Loosing()
+        {
+            labelMessage.Text = "SORRY, YOU LOST!!!";
+            buttonOK.Enabled = false;
+            textBoxLetter.Enabled = false;
+            
+            for(int i = 0; i < arrayOfLabels.Length; i++)
+            {
+                if (arrayOfLabels[i].Text == "__")
+                {
+                    string letter = word.checkLetterOnIndex(i).ToString();
+                    arrayOfLabels[i].Text = letter;
+                }
             }
         }
 
@@ -207,6 +237,79 @@ namespace Hangman
 
             for (int i = 0; i < lengthOfWord; i++)
                 arrayOfLabels[i].Text = "__";
+        }
+
+      
+        /// <summary>
+        /// draws picture of the Hangman
+        /// </summary>
+        /// <param name="parts">enum that show which part of picture to draw</param>
+        private void DrawingHangman(PictureParts parts)
+        {
+            Graphics g = panelHangman.CreateGraphics();
+            Pen myPen = new Pen(Color.Black, 5);
+            Point startPoint;
+            Point endPoint;
+
+            switch (numberOfTries)
+            {
+                default:
+                    break;
+                case 1:
+                    startPoint = new Point(50, 400);
+                    endPoint = new Point(150, 400);
+                    g.DrawLine(myPen, startPoint, endPoint);
+                    g.Dispose();
+                    break;
+                case 2:
+                    startPoint = new Point(100, 400);
+                    endPoint = new Point(100, 100);
+                    g.DrawLine(myPen, startPoint, endPoint);
+                    g.Dispose();
+                    break;
+                case 3:
+                    startPoint = new Point(100, 100);
+                    endPoint = new Point(250, 100);
+                    g.DrawLine(myPen, startPoint, endPoint);
+                    g.Dispose();
+                    break;
+                case 4:
+                    startPoint = new Point(250, 100);
+                    endPoint = new Point(250, 200);
+                    g.DrawLine(myPen, startPoint, endPoint);
+                    g.Dispose();
+                    break;
+                case 5:
+                    float x = 220f;
+                    float y = 200f;
+                    g.DrawEllipse(myPen, x, y, 60, 60);
+                    g.Dispose();
+                    break;
+                case 6:
+                    startPoint = new Point(250, 260);
+                    endPoint = new Point(250, 360);
+                    g.DrawLine(myPen, startPoint, endPoint);
+                    g.Dispose();
+                    break;
+                case 7:
+                    startPoint = new Point(220, 280);
+                    endPoint = new Point(280, 280);
+                    g.DrawLine(myPen, startPoint, endPoint);
+                    g.Dispose();
+                    break;
+                case 8:
+                    startPoint = new Point(250, 360);
+                    endPoint = new Point(270, 400);
+                    g.DrawLine(myPen, startPoint, endPoint);
+                    g.Dispose();
+                    break;
+                case 9:
+                    startPoint = new Point(250, 360);
+                    endPoint = new Point(230, 400);
+                    g.DrawLine(myPen, startPoint, endPoint);
+                    g.Dispose();
+                    break;
+            }
         }
     }
 }

@@ -17,11 +17,13 @@ namespace Hangman
         public Word()
         {
             selectingWord = new SelectingWord();
-            theWord();
-            
+            StartTheWord();
         }
 
-        private void theWord()
+        /// <summary>
+        /// Gets the word from SelectingWord class and changes this word to array of characters
+        /// </summary>
+        private void StartTheWord()
         {
             string word = selectingWord.TheWord();
             wordCharArray = word.ToCharArray();
@@ -30,7 +32,6 @@ namespace Hangman
         /// <summary>
         /// Provides number of letter in the word
         /// </summary>
-        /// <returns></returns>
         public int WordLength()
         {
             return wordCharArray.Length;
@@ -73,6 +74,18 @@ namespace Hangman
             return test;
         }
 
+        /// <summary>
+        /// shows char at specific index
+        /// </summary>
+        /// <param name="index">index of the char</param>
+        /// <returns></returns>
+        public char checkLetterOnIndex(int index)
+        {
 
+            if (index < WordLength())
+                return wordCharArray[index];
+            else
+                return '1';
+        }
     }
 }

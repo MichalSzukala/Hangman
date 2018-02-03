@@ -34,12 +34,9 @@ namespace Hangman
         {
             //provide string which contain all of the words from "WordList.txt" file
             string wordListString = Properties.Resources.WordList;
-
             //spliting wordListString to the array.  Splits on the new line break
             string[] arrayOfWords = wordListString.Split(new[] { Environment.NewLine },StringSplitOptions.None);
-
             int randomNumber = RandomNumber(arrayOfWords.Length);
-            //System.Diagnostics.Debug.WriteLine(arrayOfWords[randomNumber]);---------------------------------
 
             return arrayOfWords[randomNumber];
         }
