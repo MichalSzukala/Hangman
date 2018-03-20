@@ -1,0 +1,11 @@
+C:\Users\Z\Desktop\GitHub\Hangman\Hangman\bin\Release\Hangman.exe.config
+C:\Users\Z\Desktop\GitHub\Hangman\Hangman\bin\Release\Hangman.exe
+C:\Users\Z\Desktop\GitHub\Hangman\Hangman\bin\Release\Hangman.pdb
+C:\Users\Z\Desktop\GitHub\Hangman\Hangman\obj\Release\Hangman.csprojResolveAssemblyReference.cache
+C:\Users\Z\Desktop\GitHub\Hangman\Hangman\obj\Release\Hangman.AboutBoxInfo.resources
+C:\Users\Z\Desktop\GitHub\Hangman\Hangman\obj\Release\Hangman.GUI.resources
+C:\Users\Z\Desktop\GitHub\Hangman\Hangman\obj\Release\Hangman.Properties.Resources.resources
+C:\Users\Z\Desktop\GitHub\Hangman\Hangman\obj\Release\Hangman.csproj.GenerateResource.Cache
+C:\Users\Z\Desktop\GitHub\Hangman\Hangman\obj\Release\Hangman.csproj.CoreCompileInputs.cache
+C:\Users\Z\Desktop\GitHub\Hangman\Hangman\obj\Release\Hangman.exe
+C:\Users\Z\Desktop\GitHub\Hangman\Hangman\obj\Release\Hangman.pdb
